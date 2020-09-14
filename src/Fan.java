@@ -11,25 +11,31 @@ public class Fan {
         this.speed = speed;
     }
 
-    public int getSpeed(){
+    public int getSpeed() {
         return this.speed;
     }
-    public void setOn(boolean on){
-        this.on=on;
+
+    public void setOn(boolean on) {
+        this.on = on;
     }
-    public boolean getOn(){
+
+    public boolean getOn() {
         return this.on;
     }
-    public void setRadius(double radius){
-        this.radius=radius;
+
+    public void setRadius(double radius) {
+        this.radius = radius;
     }
-    public double getRadius(){
+
+    public double getRadius() {
         return this.radius;
     }
-    public void setColor(String color){
-        this.color=color;
+
+    public void setColor(String color) {
+        this.color = color;
     }
-    public String getColor(){
+
+    public String getColor() {
         return this.color;
     }
 
@@ -37,8 +43,8 @@ public class Fan {
 
     }
 
-    public String toString(boolean on, int speed, String color, double radius) {
-        if (on) {
+    public String toString() {
+        if (on == true) {
             return "Fan{" +
                     "speed=" + speed +
                     ", radius=" + radius +
